@@ -87,18 +87,35 @@ body:not(.home-page){
   justify-content:center;
   gap:30px;
   font-size:.85rem;
-  color:#4d3728;
+  color:#000;
 }
 
 .home-nav a{
   padding:23px 0 18px;
+  color:#000 !important;
   border-bottom:2px solid transparent;
 }
 
-.home-nav a.active,
-.home-nav a:hover{
-  color:var(--home-orange);
-  border-bottom-color:var(--home-orange);
+.home-nav a:link,
+.home-nav a:visited{
+  color:#000 !important;
+}
+
+.home-nav a:hover,
+.home-nav a:focus{
+  color:var(--home-orange) !important;
+  border-bottom-color:var(--home-orange) !important;
+}
+
+.home-nav a.active{
+  color:#000 !important;
+  border-bottom-color:#000 !important;
+}
+
+.home-nav a.active:hover,
+.home-nav a.active:focus{
+  color:var(--home-orange) !important;
+  border-bottom-color:var(--home-orange) !important;
 }
 
 .home-actions{

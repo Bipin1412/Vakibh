@@ -50,15 +50,21 @@ const homePage = `<!DOCTYPE html>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="site-title" href="index.html">
-      वारकरी संत ज्ञानकोश
-      <span>Varkari Sant Dnyankosh</span>
+<header class="home-header">
+  <div class="home-header-inner">
+    <a class="home-logo" href="index.html" aria-label="वारकरी संत साहित्य">
+      <img src="assets/vaakibh_logo.svg" alt="वारकरी">
     </a>
-    <nav class="header-nav">
-    ${navLinks()}
+    <nav class="home-nav" aria-label="मुख्य नेव्हिगेशन">
+      <a class="active" href="index.html">मुखपृष्ठ</a>
+      <a href="index.html#grantha">ग्रंथ</a>
+      <a href="index.html#abhang">अभंगसंग्रह</a>
+      <a href="index.html#saints">संत</a>
     </nav>
+    <div class="home-actions">
+      <button class="language-btn" type="button">मराठी</button>
+      <button class="search-icon-btn" type="button" aria-label="शोध">⌕</button>
+    </div>
   </div>
 </header>
 
@@ -73,11 +79,6 @@ const homePage = `<!DOCTYPE html>
     ${saints.map(cardHtml).join('\n    ')}
   </div>
 </main>
-
-<footer class="site-footer">
-  <p>वारकरी संत ज्ञानकोश — मराठी भक्तिसाहित्याचे जतन</p>
-  <p>साहित्यस्रोत: <a href="https://www.santsahitya.in" target="_blank">santsahitya.in</a></p>
-</footer>
 
 </body>
 </html>`;
@@ -129,15 +130,21 @@ function saintPage(s) {
 </head>
 <body data-abhanga-var="${abhangaVarName}">
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="site-title" href="../index.html">
-      वारकरी संत ज्ञानकोश
-      <span>Varkari Sant Dnyankosh</span>
+<header class="home-header">
+  <div class="home-header-inner">
+    <a class="home-logo" href="../index.html" aria-label="वारकरी संत साहित्य">
+      <img src="../assets/vaakibh_logo.svg" alt="वारकरी">
     </a>
-    <nav class="header-nav">
-    ${navLinks('../')}
+    <nav class="home-nav" aria-label="मुख्य नेव्हिगेशन">
+      <a class="active" href="../index.html">मुखपृष्ठ</a>
+      <a href="../index.html#grantha">ग्रंथ</a>
+      <a href="../index.html#abhang">अभंगसंग्रह</a>
+      <a href="../index.html#saints">संत</a>
     </nav>
+    <div class="home-actions">
+      <button class="language-btn" type="button">मराठी</button>
+      <button class="search-icon-btn" type="button" aria-label="शोध">⌕</button>
+    </div>
   </div>
 </header>
 
@@ -188,11 +195,6 @@ function saintPage(s) {
   </section>
 
 </main>
-
-<footer class="site-footer">
-  <p>वारकरी संत ज्ञानकोश — मराठी भक्तिसाहित्याचे जतन</p>
-  <p>साहित्यस्रोत: <a href="https://www.santsahitya.in" target="_blank">santsahitya.in</a></p>
-</footer>
 
 <script src="../data/saints.js"></script>
 <script src="../data/abhangas/${s.id}.js"></script>

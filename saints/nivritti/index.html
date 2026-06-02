@@ -7,12 +7,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <style>
 body{margin:0;background:#e6e6e6;font-family:'Tiro Devanagari Marathi','Noto Serif Devanagari','Mangal',serif}
-.top{background:#69494b;color:#fff;padding:14px 0}
-.top-inner{width:min(1120px,calc(100% - 28px));margin:0 auto;display:grid;grid-template-columns:94px 1fr 210px;align-items:center;gap:18px}
-.logo{width:68px;height:68px;background:#f08b13;color:#180900;font-weight:700;display:grid;place-items:center;line-height:1.1;border-radius:4px;position:relative;text-align:center}
-.logo:after{content:"";position:absolute;right:-14px;top:0;border-top:34px solid transparent;border-bottom:34px solid transparent;border-left:14px solid #e6e6e6}
-.nav{display:flex;gap:16px;justify-content:center;font-size:.92rem;font-weight:700}.nav a{color:#fff;text-decoration:none}
-.search{display:grid;grid-template-columns:1fr 28px;height:30px}.search input{border:0;padding:0 8px}.search button{border:0;background:#f08b13;color:#fff}
 .wrap{width:min(1120px,calc(100% - 28px));margin:0 auto;padding-bottom:26px}
 .box{border:1px solid #f08b28;border-top:0;background:#e6e6e6}
 .sec{padding:10px 22px;border-bottom:1px solid #f08b28}.sec h2{text-align:center;color:#b4252f;margin:0 0 10px;font-size:2.05rem}
@@ -23,11 +17,27 @@ body{margin:0;background:#e6e6e6;font-family:'Tiro Devanagari Marathi','Noto Ser
 .footmenu{background:#69494b;color:#fff;padding:10px 0}.footmenu div{width:min(1120px,calc(100% - 28px));margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;font-size:1.1rem;font-weight:700}
 .footbar{background:#f08b13;text-align:center;color:#130a00;font-size:2rem;padding:6px 0}
 .float{position:fixed;right:14px;top:42%;display:grid;gap:10px}.float a{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none}.fwa{background:#35c55f}.fpl{background:#f05045}
-@media(max-width:980px){.top-inner{grid-template-columns:1fr}.logo{margin:0 auto}.nav{flex-wrap:wrap}.abhang-list{columns:2}.footmenu div{grid-template-columns:repeat(2,1fr)}.float{display:none}}
+@media(max-width:980px){.abhang-list{columns:2}.footmenu div{grid-template-columns:repeat(2,1fr)}.float{display:none}}
 </style>
 </head>
 <body>
-<header class="top"><div class="top-inner"><div class="logo">संत<br>साहित्य</div><nav class="nav"><a href="../../index.html">सर्व संतांचे साहित्य</a><a href="../../index.html">महती संतांची</a><a href="../../index.html">सर्व संतांचे अँप</a><a href="../nivritti/index.html">अभंग गाथा</a><a href="../../index.html">ग्रंथ</a><a href="../../index.html">तीर्थक्षेत्र</a><a href="../../index.html">ह.भ.प.</a><a href="../../index.html">इतर</a></nav><div class="search"><input placeholder="शोधा"><button>⌕</button></div></div></header>
+<header class="home-header">
+  <div class="home-header-inner">
+    <a class="home-logo" href="../../index.html" aria-label="वारकरी संत साहित्य">
+      <img src="../../assets/vaakibh_logo.svg" alt="वारकरी">
+    </a>
+    <nav class="home-nav" aria-label="मुख्य नेव्हिगेशन">
+      <a class="active" href="../../index.html">मुखपृष्ठ</a>
+      <a href="../../index.html#grantha">ग्रंथ</a>
+      <a href="../../index.html#abhang">अभंगसंग्रह</a>
+      <a href="../../index.html#saints">संत</a>
+    </nav>
+    <div class="home-actions">
+      <button class="language-btn" type="button">मराठी</button>
+      <button class="search-icon-btn" type="button" aria-label="शोध">⌕</button>
+    </div>
+  </div>
+</header>
 <main class="wrap"><div class="box">
 <section class="sec"><h2>संत निवृत्तीनाथांचे साहित्य</h2><div class="sahitya"><span>संत निवृत्तीनाथ माहिती</span><span>संत निवृत्तीनाथ हरिपाठ</span><span>संत निवृत्तीनाथ अभंग</span><span>संत निवृत्तीनाथ आरती</span><span>संत निवृत्तीनाथ समाधी</span></div></section>
 <section class="sec" style="border-bottom:0"><h2>संत निवृत्तीनाथांचे अभंग</h2><div class="abhang-list">
@@ -272,7 +282,7 @@ body{margin:0;background:#e6e6e6;font-family:'Tiro Devanagari Marathi','Noto Ser
 <p>प्रपंच टवाळ वृक्षाचें फळ</p>
 <p>कल्पना कोंडूनि मन</p>
 </div></section></div></main>
-<footer><div class="footmenu"><div><span>जाहिराती थांबा</span><span>मदत व देणगी</span><span>संत साहित्य बद्दल</span><span>घरपोच पुस्तकं व साहित्य</span></div></div><div class="footbar">Design &amp; Develop By kk Team</div></footer>
+  <footer><div class="footbar">Design &amp; Develop By kk Team</div></footer>
 <div class="float"><a class="fwa" href="#">🟢</a><a class="fpl" href="#">▶</a></div>
 </body>
 </html>
