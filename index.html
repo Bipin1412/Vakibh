@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>वाकीभ संतसाहित्य</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+<header class="home-header">
+  <div class="home-header-inner">
+    <a class="home-logo" href="index.html" aria-label="वाकीभ संतसाहित्य">
+      <img src="assets/vaakibh_logo.svg" alt="वाकीभ">
+    </a>
+    <nav class="home-nav" aria-label="मुख्य नेव्हिगेशन">
+      <a class="active" href="index.html">मुखपृष्ठ</a>
+      <a href="#grantha">ग्रंथ</a>
+      <a href="#abhang">अभंगसंग्रह</a>
+      <a href="#saints">संत</a>
+    </nav>
+    <div class="home-actions">
+      <button class="language-btn" type="button">मराठी</button>
+      <button class="search-icon-btn" type="button" aria-label="शोध">⌕</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="landing-hero" aria-label="वाकीभ संतसाहित्य">
+    <video id="heroVideo" class="hero-video" autoplay muted loop playsinline poster="assets/hero-bg.jpg">
+      <source src="assets/vaakibh.mp4" type="video/mp4">
+    </video>
+    <audio id="heroAudio" preload="auto" loop>
+      <source src="assets/vaakibh_audio.mp3" type="audio/mpeg">
+    </audio>
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <img class="hero-mark" src="assets/illustrations/halo-circle.svg" alt="" aria-hidden="true">
+      <h1>वाकीभ<br>संतसाहित्य</h1>
+      <p>अभंग, आरती, गाथा आणि मराठी भक्तिसाहित्य वाचकांसाठी एकत्रित संग्रह</p>
+      <form class="hero-search" action="#saints">
+        <label class="sr-only" for="home-search">शोध</label>
+        <span aria-hidden="true">⌕</span>
+        <input id="home-search" type="search" placeholder="आरती, संत किंवा ग्रंथ शोधा...">
+        <button type="submit">शोधा</button>
+      </form>
+      <a class="hero-cta" href="#grantha">वाचा पुढे</a>
+    </div>
+    <div class="video-controls" aria-label="होम बॅनर व्हिडिओ नियंत्रण">
+      <button id="heroPlaySmall" class="video-control-btn" type="button" aria-label="व्हिडिओ प्ले करा">▶</button>
+      <span id="heroTime">0:00 / 1:00</span>
+      <div class="video-progress" aria-hidden="true"><span id="heroProgress"></span></div>
+      <button id="heroMute" class="video-control-btn" type="button" aria-label="आवाज सुरू करा">🔇</button>
+      <button id="heroFullscreen" class="video-control-btn" type="button" aria-label="पूर्ण स्क्रीन">↗</button>
+      <button id="heroPlay" class="play-round" type="button" aria-label="व्हिडिओ प्ले करा">▶</button>
+    </div>
+  </section>
+
+  <section class="quick-links section-wrap">
+    <div class="ornament"><img src="assets/illustrations/divider-diya.svg" alt=""></div>
+    <h2>संत साहित्य व विविध प्रकारातील पुस्तके किंवा रचना</h2>
+    <div class="link-row">
+      <a href="saints/dnyaneshwar/index.html">संत ज्ञानेश्वर</a>
+      <a href="saints/tukaram/index.html">संत तुकाराम</a>
+      <a href="saints/namdev/index.html">संत नामदेव</a>
+      <a href="saints/eknath/index.html">संत एकनाथ</a>
+      <a href="saints/muktabai/index.html">संत मुक्ताबाई</a>
+      <a href="saints/janabai/index.html">संत जनाबाई</a>
+      <a href="saints/nivritti/index.html">संत निवृत्ती</a>
+      <a href="saints/sopandev/index.html">संत सोपानदेव</a>
+      <a href="saints/chokhamela/index.html">संत चोखामेळा</a>
+      <a href="saints/kanhopatra/index.html">संत कान्होपात्रा</a>
+      <a href="saints/kanho/index.html">संत कान्हो</a>
+      <a href="saints/narhari/index.html">संत नरहरी</a>
+    </div>
+  </section>
+
+  <section id="grantha" class="section-wrap">
+    <div class="section-title">
+      <h2>ग्रंथ संग्रह</h2>
+    </div>
+    <div class="books-grid">
+      <a class="book-card" href="saints/dnyaneshwar/index.html">
+        <img src="assets/grantha/dnyaneshwari.png" alt="ज्ञानेश्वरी">
+        <span>ज्ञानेश्वरी</span>
+      </a>
+      <a class="book-card" href="saints/tukaram/index.html">
+        <img src="assets/grantha/tukaram gaatha.png" alt="तुकाराम गाथा">
+        <span>तुकाराम गाथा</span>
+      </a>
+      <a class="book-card" href="saints/namdev/index.html">
+        <img src="assets/grantha/namdev gaatha.png" alt="नामदेव गाथा">
+        <span>नामदेव गाथा</span>
+      </a>
+      <a class="book-card" href="saints/eknath/index.html">
+        <img src="assets/grantha/eknaathi bhagwat.png" alt="एकनाथी भागवत">
+        <span>एकनाथी भागवत</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="abhang" class="section-wrap">
+    <div class="ornament"><img src="assets/illustrations/divider-lotus.svg" alt=""></div>
+    <div class="section-title">
+      <h2>वैशिष्ट्यपूर्ण अभंग</h2>
+      <p>निवडक रचना</p>
+      <a href="#latest">वाचा पुढे</a>
+    </div>
+    <div class="feature-grid">
+      <article class="verse-card">
+        <div class="tag">अभंग · संत तुकाराम</div>
+        <h3>सुंदर ते ध्यान उभे विटेवरी</h3>
+        <p>कर कटावरी ठेवूनिया । तुळसीहार गळा कासे पितांबर ॥</p>
+        <div class="card-actions">♡ ⤴ ⌁</div>
+      </article>
+      <article class="verse-card">
+        <div class="tag">आरती · ज्ञानेश्वर</div>
+        <h3>आरती ज्ञानराजा</h3>
+        <p>महाकैवल्य तेजा । सेविती साधुसंत मनु वेधला माझा ॥</p>
+        <div class="card-actions">♡ ⤴ ⌁</div>
+      </article>
+      <article class="verse-card">
+        <div class="tag">अभंग · संत नामदेव</div>
+        <h3>पांडुरंग</h3>
+        <p>आता विश्वात्मके देवे । येणे वाग्यज्ञे तोषावे ॥</p>
+        <div class="card-actions">♡ ⤴ ⌁</div>
+      </article>
+      <article class="verse-card">
+        <div class="tag">अभंग · संत एकनाथ</div>
+        <h3>माझे माहेर पंढरी</h3>
+        <p>आहे भीवरेच्या तीरी । बाप आणि आई माझी विठ्ठल रखुमाई ॥</p>
+        <div class="card-actions">♡ ⤴ ⌁</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="saints" class="section-wrap">
+    <div class="ornament"><img src="assets/illustrations/divider-diya.svg" alt=""></div>
+    <div class="section-title">
+      <h2>संत परंपरा</h2>
+      <p>महाराष्ट्रातील संत परंपरा</p>
+      <a href="#categories">वाचा पुढे</a>
+    </div>
+    <div class="home-saints-grid">
+      <a class="home-saint-card" href="saints/dnyaneshwar/index.html"><img src="assets/sant/sant dnyaneshwar.png" alt="संत ज्ञानेश्वर"><strong>संत ज्ञानेश्वर</strong><span>१२७५ - १२९६</span><p>मराठीतील महान संतकवी आणि ज्ञानयोगी.</p></a>
+      <a class="home-saint-card" href="saints/tukaram/index.html"><img src="assets/sant/sant tukaram.png" alt="संत तुकाराम"><strong>संत तुकाराम</strong><span>१६०८ - १६५०</span><p>अभंगगाथेसाठी प्रसिद्ध वारकरी संत.</p></a>
+      <a class="home-saint-card" href="saints/namdev/index.html"><img src="assets/sant/sant namdev.png" alt="संत नामदेव"><strong>संत नामदेव</strong><span>१२७० - १३५०</span><p>विठ्ठलभक्तीचा अखंड संदेश देणारे संत.</p></a>
+      <a class="home-saint-card" href="saints/eknath/index.html"><img src="assets/sant/sant eknaath.png" alt="संत एकनाथ"><strong>संत एकनाथ</strong><span>१५३३ - १५९९</span><p>भागवत परंपरेतील श्रेष्ठ कवीसंत.</p></a>
+      <a class="home-saint-card" href="saints/nivritti/index.html"><img src="assets/sant/sant nirutti maharaj.png" alt="संत निवृत्ती महाराज"><strong>संत निवृत्ती महाराज</strong><span>१२७३ - १२९७</span><p>नाथ परंपरेचे मार्गदर्शक संत.</p></a>
+      <a class="home-saint-card" href="saints/muktabai/index.html"><img src="assets/sant/sant muktabai.png" alt="संत मुक्ताबाई"><strong>संत मुक्ताबाई</strong><span>१२७९ - १२९७</span><p>ज्ञानेश्वरांच्या भगिनी आणि संतकवयित्री.</p></a>
+      <a class="home-saint-card" href="saints/sopandev/index.html"><img src="assets/sant/संत सोपान काका महाराज.png" alt="संत सोपानदेव"><strong>संत सोपानदेव</strong><span>१२७७ - १२९७</span><p>वारकरी संतपरंपरेतील आदरणीय संत.</p></a>
+      <a class="home-saint-card" href="saints/chokhamela/index.html"><img src="assets/sant/संत चोखामेळा महाराज.png" alt="संत चोखामेळा"><strong>संत चोखामेळा</strong><span>इ.स. १३००</span><p>समतेचा संदेश देणारे विठ्ठलभक्त संत.</p></a>
+      <a class="home-saint-card" href="saints/janabai/index.html"><img src="assets/sant/संत जनाबाई महाराज.png" alt="संत जनाबाई"><strong>संत जनाबाई</strong><span>इ.स. १२९८</span><p>भक्तिरसात न्हालेली संतकवयित्री.</p></a>
+      <a class="home-saint-card" href="saints/kanhopatra/index.html"><img src="assets/sant/sant kanho.png" alt="संत कान्होपात्रा"><strong>संत कान्होपात्रा</strong><span>इ.स. १४००</span><p>विठ्ठलभक्तीची कोमल परंपरा जपणारी संत.</p></a>
+      <a class="home-saint-card" href="saints/kanho/index.html"><img src="assets/sant/संत रोहिदास महाराज.png" alt="संत कान्हो"><strong>संत कान्हो</strong><span>इ.स. १५००</span><p>वारकरी भक्तिसाहित्यातील संतकवी.</p></a>
+      <a class="home-saint-card" href="saints/narhari/index.html"><img src="assets/sant/संत नरहरी सोनार महाराज.png" alt="संत नरहरी सोनार"><strong>संत नरहरी</strong><span>इ.स. १३००</span><p>कर्म आणि भक्तीचा सुंदर संगम.</p></a>
+    </div>
+  </section>
+
+  <section id="categories" class="section-wrap categories-section">
+    <div class="ornament"><img src="assets/illustrations/divider-lotus.svg" alt=""></div>
+    <div class="section-title">
+      <h2>विभाग</h2>
+      <p>साहित्यप्रकार आणि संग्रह</p>
+    </div>
+    <div class="category-grid">
+      <a class="category-card" href="#grantha"><img src="assets/illustrations/category-book.svg" alt=""><strong>मराठी ग्रंथ</strong><span>४५ ग्रंथ</span></a>
+      <a class="category-card" href="#saints"><img src="assets/illustrations/category-lotus.svg" alt=""><strong>संत</strong><span>२३ संत</span></a>
+      <a class="category-card" href="#abhang"><img src="assets/illustrations/category-diya.svg" alt=""><strong>अभंग</strong><span>८२ अभंग</span></a>
+      <a class="category-card" href="#latest"><img src="assets/illustrations/category-rudraksha.svg" alt=""><strong>आरती</strong><span>१५ आरती</span></a>
+      <a class="category-card" href="#grantha"><img src="assets/illustrations/category-lotus.svg" alt=""><strong>अध्यात्म</strong><span>५३ लेख</span></a>
+      <a class="category-card" href="#latest"><img src="assets/illustrations/category-diya.svg" alt=""><strong>ओवी</strong><span>४० ओवी</span></a>
+    </div>
+  </section>
+
+  <section id="latest" class="section-wrap latest-section">
+    <div class="ornament"><img src="assets/illustrations/divider-diya.svg" alt=""></div>
+    <div class="section-title">
+      <h2>नवीन अभंग</h2>
+      <a href="#abhang">वाचा पुढे</a>
+    </div>
+    <div class="latest-grid">
+      <article class="mini-card"><div class="tag">अभंग</div><h3>सुंदर ते ध्यान उभे विटेवरी</h3><p>कर कटावरी ठेवूनिया...</p><span>संत तुकाराम</span></article>
+      <article class="mini-card"><div class="tag">अभंग</div><h3>काही वेळ</h3><p>अवघे गरजे पंढरपूर...</p><span>संत नामदेव</span></article>
+      <article class="mini-card"><div class="tag">आरती</div><h3>पसायदान</h3><p>आता विश्वात्मके देवे...</p><span>संत ज्ञानेश्वर</span></article>
+      <article class="mini-card"><div class="tag">अभंग</div><h3>माझे माहेर पंढरी</h3><p>आहे भीवरेच्या तीरी...</p><span>संत एकनाथ</span></article>
+    </div>
+  </section>
+</main>
+
+<footer class="home-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/vaakibh_logo.svg" alt="वाकीभ">
+      <p>संत साहित्य, अभंग, गाथा आणि आरती यांचा मराठी संग्रह.</p>
+      <div class="social-row"><a href="#">f</a><a href="#">▶</a><a href="#">◉</a></div>
+    </div>
+    <nav class="footer-links" aria-label="फुटर नेव्हिगेशन">
+      <h2>मेनू</h2>
+      <a href="index.html">मुखपृष्ठ</a>
+      <a href="#grantha">ग्रंथ</a>
+      <a href="#saints">संत</a>
+      <a href="#abhang">अभंग</a>
+      <a href="#categories">विभाग</a>
+    </nav>
+    <div class="footer-contact">
+      <h2>संपर्क</h2>
+      <p>✉ vakibhmedia@gmail.com</p>
+      <p>☎ +91 99293 16456</p>
+      <p>⌖ Pune, Maharashtra</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© २०२६ संत साहित्य. सर्व हक्क राखीव.</div>
+  <a class="whatsapp-float" href="#" aria-label="WhatsApp"><img src="assets/whatsapp_icon.svg" alt=""></a>
+  <button id="veenaSoundToggle" class="footer-instrument-btn" type="button" aria-label="वीणा आवाज सुरू करा">
+    <img class="footer-instrument" src="assets/veena.svg" alt="" aria-hidden="true">
+  </button>
+  <audio id="veenaAudio" preload="auto" loop>
+    <source src="assets/vaakibh_audio.mp3" type="audio/mpeg">
+  </audio>
+</footer>
+<script src="js/home.js"></script>
+</body>
+</html>
